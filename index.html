@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
 
-<!-- ▼▼▼ [수정 4] 메타디스크립션 교체 ▼▼▼ -->
+<!-- 메타디스크립션 -->
 <meta name="description" content="결혼식 전 다운타임 없는 티타늄 리프팅. 붓기·멍이 적어 바로 일상 복귀, 얼굴선 탄력과 피부톤을 함께. 시기·주의점 정리.">
-<!-- ▲▲▲ [수정 4] ▲▲▲ -->
 
 <title>결혼식이 코앞인데 다운타임 없는 리프팅 추천해주세요 | 힐하우스피부과</title>
 
@@ -20,7 +19,7 @@
 <meta name="twitter:title" content="결혼식이 코앞인데 다운타임 없는 리프팅 추천해주세요 | 힐하우스피부과">
 <meta name="twitter:description" content="결혼식 전 다운타임 없는 티타늄 리프팅. 붓기·멍이 적어 바로 일상 복귀, 얼굴선 탄력과 피부톤을 함께. 시기·주의점 정리.">
 
-<!-- 폰트: Pretendard(고딕 / 본문) + Noto Serif KR(명조 / 제목 전용) -->
+<!-- 폰트: Pretendard(고딕/본문) + Noto Serif KR(명조/제목 전용) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +37,9 @@
     --sky-deep:#3f6c93;
     --sky-soft:#eef3f8;
     --sky-line:#d6e2ee;
-    --paper:#ffffff;            /* [수정 8] 배경 흰색 */
+    --paper:#ffffff;
     --cream:#f4f1ea;
-    --hl:#ffe487;               /* [수정 9] 형광펜 색 */
+    --hl:#ffe487;
     --serif:'Noto Serif KR', Georgia, serif;
     --sans:'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
   }
@@ -49,10 +48,9 @@
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--paper);           /* [수정 8] 흰색 */
+    background:var(--paper);
     color:var(--body);
-    /* [수정 2] 본문 전체 고딕(Pretendard) */
-    font-family:var(--sans);
+    font-family:var(--sans);           /* 본문 전체 고딕 */
     line-height:1.75;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
@@ -63,18 +61,10 @@
 
   .wrapper{width:100%;max-width:75rem;margin:0 auto;padding:0 1.25rem;}
 
-  .label-caps{
-    font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
-    font-weight:600;color:var(--stone);
-  }
+  .label-caps{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--stone);}
 
   /* ── 헤더 ─────────────────────────────── */
-  .site-header{
-    position:sticky;top:0;z-index:40;
-    background:rgba(255,255,255,.92);
-    backdrop-filter:saturate(120%) blur(8px);
-    border-bottom:1px solid var(--hairline);
-  }
+  .site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--hairline);}
   .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:64px;}
   .logo img{height:34px;width:auto;}
   .nav{display:none;}
@@ -82,30 +72,28 @@
   .nav a{font-size:.875rem;letter-spacing:.02em;color:var(--stone);transition:color .15s;}
   .nav a:hover{color:var(--ink);}
   .nav a.active{color:var(--ink);text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:1px;}
-  .btn-warm{
-    display:none;align-items:center;height:38px;padding:0 1.05rem;border-radius:999px;
-    background:var(--ink);color:#fff;font-size:.8125rem;letter-spacing:.02em;font-weight:500;
-  }
-  @media(min-width:1024px){
-    .nav{display:block;}
-    .btn-warm{display:inline-flex;}
-  }
+  .btn-warm{display:none;align-items:center;height:38px;padding:0 1.05rem;border-radius:999px;background:var(--ink);color:#fff;font-size:.8125rem;letter-spacing:.02em;font-weight:500;}
+  @media(min-width:1024px){.nav{display:block;}.btn-warm{display:inline-flex;}}
 
-  /* ── 레이아웃 ─────────────────────────── */
+  /* ── 레이아웃: 데스크톱 3단(목차 | 본문 | 프로필) ── */
   .layout{margin-top:1.5rem;}
-  @media(min-width:1024px){
-    .layout{display:grid;grid-template-columns:minmax(0,46.25rem) 1fr;gap:4.5rem;align-items:start;}
+  @media(min-width:1100px){
+    .layout{
+      display:grid;
+      grid-template-columns:12rem minmax(0,1fr) 14rem;   /* 왼쪽 목차 · 가운데 본문 · 오른쪽 프로필 */
+      gap:2.75rem;
+      align-items:start;
+    }
   }
   .article{max-width:46.25rem;margin:0 auto;}
-  @media(min-width:1024px){.article{margin:0;max-width:none;}}
+  @media(min-width:1100px){.article{margin:0;max-width:none;}}
 
   /* ── 아티클 헤더 ──────────────────────── */
   .eyebrow{margin:0 0 1rem;}
   .eyebrow a{color:var(--sky-deep);}
   .eyebrow .sub{margin-left:.5rem;color:var(--mist);}
 
-  /* [수정 2] 제목만 명조(serif) 유지 */
-  h1.title{
+  h1.title{                              /* 제목만 명조 */
     font-family:var(--serif);
     font-weight:500;
     font-size:clamp(1.85rem,5.2vw,2.7rem);
@@ -115,127 +103,84 @@
     letter-spacing:-.01em;
   }
 
-  .byline{display:flex;align-items:center;gap:.625rem;margin-top:1.25rem;}
-  .byline img{width:44px;height:44px;border-radius:999px;object-fit:cover;object-position:top center;border:1px solid var(--hairline);flex:none;}
-  .byline .name{font-weight:600;color:var(--ink);font-size:.9375rem;line-height:1.3;}
-  .byline .meta{font-size:.75rem;color:var(--stone);}
-  .byline .date{font-size:.8125rem;color:var(--mist);margin-left:.25rem;}
-
-  /* ── 목차 ─ [수정 3] 구분선 없음 ───────── */
-  .toc{margin-top:1.75rem;}
-  .toc .toc-h{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink);margin:0 0 .5rem;}
-  .toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.1rem;}
-  .toc a{display:block;padding:.45rem 0;font-size:.9375rem;color:var(--stone);transition:color .15s;}
-  .toc a:hover{color:var(--ink);}
-
-  /* ── [수정 5] 핵심 요약 박스 ──────────── */
-  .hh-summary{
-    margin-top:1.5rem;
-    background:var(--sky-soft);
-    border:1px solid var(--sky-line);
-    border-left:3px solid var(--sky-deep);
+  /* ── 목차(박스) : 행간 좁힘 ───────────── */
+  .toc{
+    border:1px solid var(--hairline);
     border-radius:12px;
-    padding:1.15rem 1.35rem 1.25rem;
+    background:#fff;
+    padding:1rem 1.1rem 1.05rem;
   }
-  .hh-summary .tag{
-    display:inline-block;
-    background:var(--sky-deep);color:#fff;
-    font-size:.6875rem;font-weight:700;letter-spacing:.12em;
-    padding:.2rem .55rem;border-radius:999px;margin-bottom:.6rem;
+  .toc .toc-h{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink);margin:0 0 .55rem;}
+  .toc ol{list-style:none;margin:0;padding:0;}
+  .toc li + li{margin-top:.1rem;}
+  .toc a{display:block;padding:.24rem 0;font-size:.875rem;line-height:1.42;color:var(--stone);transition:color .15s;}
+  .toc a:hover{color:var(--sky-deep);}
+
+  .toc-inline{display:block;margin-top:1.5rem;}   /* 모바일: 제목 바로 아래 */
+  .toc-col{display:none;}                          /* 데스크톱 왼쪽 열 */
+  @media(min-width:1100px){
+    .toc-inline{display:none;}
+    .toc-col{display:block;}
+    .toc-col .toc{position:sticky;top:5.5rem;}
   }
+
+  /* ── 핵심 요약 박스 : 배경 이미지 ─────── */
+  .hh-summary{
+    position:relative;
+    margin-top:1.6rem;
+    border-radius:14px;
+    padding:1.3rem 1.5rem 1.4rem;
+    overflow:hidden;
+    border:1px solid var(--sky-line);
+    background:var(--sky-soft) url('backgroung.jpg') center / cover no-repeat;
+  }
+  /* 사진 위 가독성용 반투명 레이어. 사진이 어두우면 흰색 대신 rgba(0,0,0,.4) 등으로 바꾸고 아래 글자색을 흰색으로 조절하세요. */
+  .hh-summary::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.62);pointer-events:none;}
+  .hh-summary .tag,.hh-summary p{position:relative;z-index:1;}
+  .hh-summary .tag{display:inline-block;background:var(--sky-deep);color:#fff;font-size:.6875rem;font-weight:700;letter-spacing:.12em;padding:.2rem .55rem;border-radius:999px;margin-bottom:.6rem;}
   .hh-summary p{margin:0;font-size:.975rem;line-height:1.72;color:#26303a;}
 
-  /* ── 리드문 ─ [수정 3] 상단 구분선 제거 ── */
-  .lede{
-    margin-top:1.75rem;
-    font-size:1.075rem;
-    line-height:1.85;
-    color:var(--ink);
-  }
+  /* ── 리드문 ──────────────────────────── */
+  .lede{margin-top:1.75rem;font-size:1.075rem;line-height:1.85;color:var(--ink);}
 
-  /* ── Q&A 섹션 ─ [수정 3] 사이 구분선 전부 삭제 ── */
+  /* ── Q&A (사이 구분선 없음) ───────────── */
   .qa{margin-top:.5rem;}
-  .qa section{padding:2.1rem 0;}          /* border 없음 */
+  .qa section{padding:2.1rem 0;scroll-margin-top:5.5rem;}
   .qa .qnum{font-size:.8125rem;letter-spacing:.05em;color:var(--mist);margin:0;font-variant-numeric:tabular-nums;}
-  .qa h2{
-    /* [수정 2] 질문 제목도 고딕 */
-    font-family:var(--sans);
-    font-weight:700;
-    font-size:clamp(1.28rem,3.6vw,1.55rem);
-    line-height:1.4;
-    color:var(--ink);
-    margin:.55rem 0 0;
-    letter-spacing:-.01em;
-  }
+  .qa h2{font-family:var(--sans);font-weight:700;font-size:clamp(1.28rem,3.6vw,1.55rem);line-height:1.4;color:var(--ink);margin:.55rem 0 0;letter-spacing:-.01em;}
   .qa .answer{margin-top:1.15rem;}
   .qa .answer p{margin:0 0 .95rem;font-size:1rem;line-height:1.82;}
   .qa .answer p:last-child{margin-bottom:0;}
   .qa .answer strong{color:var(--ink);font-weight:700;}
 
-  /* ── 표 ─ [수정 6] 가운데 정렬 ─────────── */
-  table{
-    border-collapse:collapse;
-    width:auto;
-    min-width:min(100%,26rem);
-    margin:1.4rem auto;              /* 표 자체 가운데 */
-    font-size:.95rem;
-  }
-  thead th{
-    background:var(--cream);
-    color:var(--ink);
-    font-weight:700;
-    text-align:center;
-    padding:.7rem 1.1rem;
-    border-bottom:1px solid var(--hairline);
-  }
-  tbody td{
-    text-align:center;                /* 셀 내용 가운데 */
-    padding:.7rem 1.1rem;
-    border-bottom:1px solid var(--hairline);
-    color:var(--body);
-  }
+  /* ── 표 (가운데 정렬) ─────────────────── */
+  table{border-collapse:collapse;width:auto;min-width:min(100%,26rem);margin:1.4rem auto;font-size:.95rem;}
+  thead th{background:var(--cream);color:var(--ink);font-weight:700;text-align:center;padding:.7rem 1.1rem;border-bottom:1px solid var(--hairline);}
+  tbody td{text-align:center;padding:.7rem 1.1rem;border-bottom:1px solid var(--hairline);color:var(--body);}
   tbody td strong{color:var(--ink);}
   tbody tr:last-child td{border-bottom:0;}
 
-  /* ── [수정 6] 본문 삽입 이미지 ────────── */
-  figure.hh-figure{
-    margin:1.6rem auto;
-    max-width:38rem;
-    text-align:center;
-  }
-  figure.hh-figure .frame{
-    position:relative;
-    width:100%;
-    aspect-ratio:16 / 10;
-    background:var(--cream);
-    border-radius:14px;
-    overflow:hidden;
-  }
-  figure.hh-figure img{
-    width:100%;height:100%;
-    object-fit:cover;
-    display:block;
-  }
-  figure.hh-figure figcaption{
-    margin-top:.6rem;font-size:.8125rem;color:var(--mist);
-  }
+  /* ── 본문 삽입 이미지 ─────────────────── */
+  figure.hh-figure{margin:1.6rem auto;max-width:38rem;text-align:center;}
+  figure.hh-figure .frame{position:relative;width:100%;aspect-ratio:16 / 10;background:var(--cream);border-radius:14px;overflow:hidden;}
+  figure.hh-figure img{width:100%;height:100%;object-fit:cover;display:block;}
 
-  /* ── [수정 9] 형광펜(스크롤 반응) ─────── */
+  /* ── 형광펜 : 글씨 전체 덮기 + 스크롤 반응 ── */
   .hl{
-    background-image:linear-gradient(transparent 58%, var(--hl) 58%);
+    background-image:linear-gradient(var(--hl), var(--hl));   /* 전체 높이 채움 */
     background-repeat:no-repeat;
     background-position:0 0;
     background-size:0% 100%;
     transition:background-size .6s cubic-bezier(.22,1,.36,1);
-    padding:0 .06em;
+    padding:.02em .08em;
     border-radius:2px;
+    -webkit-box-decoration-break:clone;
+    box-decoration-break:clone;
   }
   .hl.on{background-size:100% 100%;}
-  @media(prefers-reduced-motion:reduce){
-    .hl{transition:none;}
-  }
+  @media(prefers-reduced-motion:reduce){.hl{transition:none;}}
 
-  /* ── 글쓴이(모바일) ──────────────────── */
+  /* ── 글쓴이(모바일 하단) ──────────────── */
   .author-m{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--hairline);display:flex;gap:1rem;align-items:flex-start;}
   .author-m img{width:64px;height:64px;border-radius:999px;object-fit:cover;object-position:top;border:1px solid var(--hairline);flex:none;}
   .author-m .name{font-family:var(--sans);font-weight:700;font-size:1.05rem;color:var(--ink);}
@@ -243,27 +188,24 @@
   .author-m .role.blue{color:var(--sky-deep);}
   .author-m .desc{margin:.4rem 0 0;font-size:.875rem;color:var(--stone);line-height:1.65;}
   .author-m .more{display:inline-block;margin-top:.55rem;font-size:.8125rem;font-weight:600;color:var(--ink);}
-  @media(min-width:1024px){.author-m{display:none;}}
+  @media(min-width:1100px){.author-m{display:none;}}
 
-  /* ── [수정 7] 함께 읽으면 좋을 글 (박스·날짜 제거) ── */
+  /* ── 함께 읽으면 좋을 글 : 제목 옆 선 + 2열 ── */
   .related{margin-top:3rem;}
   .related .r-head{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--stone);}
-  .related h2{font-family:var(--sans);font-weight:700;font-size:1.4rem;color:var(--ink);margin:.4rem 0 1.5rem;}
-  .related ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.35rem;}
-  .related .r-cat{           /* 카테고리 파란색 유지 */
-    font-size:.75rem;letter-spacing:.06em;font-weight:700;color:var(--sky-deep);text-transform:uppercase;margin-bottom:.3rem;
-  }
-  .related .r-title{
-    font-size:1.0625rem;font-weight:600;line-height:1.5;color:var(--ink);transition:color .15s;
-  }
+  .r-titlebar{display:flex;align-items:center;gap:1.1rem;margin:.35rem 0 1.6rem;}
+  .r-titlebar h2{font-family:var(--sans);font-weight:700;font-size:1.4rem;color:var(--ink);margin:0;white-space:nowrap;}
+  .r-titlebar .r-rule{flex:1;height:1px;background:var(--hairline);}   /* 제목 옆 선 */
+  .related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:1.3rem 2rem;}
+  @media(min-width:560px){.related ul{grid-template-columns:1fr 1fr;}}   /* 2열 */
+  .related .r-cat{font-size:.75rem;letter-spacing:.06em;font-weight:700;color:var(--sky-deep);text-transform:uppercase;margin-bottom:.3rem;}
+  .related .r-title{font-size:1.0625rem;font-weight:600;line-height:1.5;color:var(--ink);transition:color .15s;}
   .related a:hover .r-title{color:var(--sky-deep);}
 
-  /* ── 사이드바(데스크톱) ──────────────── */
+  /* ── 사이드바(데스크톱 오른쪽) ────────── */
   .sidebar{display:none;}
-  @media(min-width:1024px){
-    .sidebar{display:block;}
-    .sidebar .sticky{position:sticky;top:6.5rem;display:flex;flex-direction:column;gap:2.5rem;}
-  }
+  @media(min-width:1100px){.sidebar{display:block;}}
+  .sidebar .sticky{position:sticky;top:5.5rem;display:flex;flex-direction:column;gap:2.5rem;}
   .doc-card .photo{aspect-ratio:4/5;overflow:hidden;border-radius:14px;background:var(--cream);}
   .doc-card .photo img{width:100%;height:100%;object-fit:cover;object-position:top;}
   .doc-card .name{font-family:var(--sans);font-weight:700;font-size:1.05rem;color:var(--ink);margin-top:1rem;}
@@ -276,7 +218,7 @@
   .doc-more a{font-size:.9375rem;font-weight:500;color:var(--ink);line-height:1.5;transition:color .15s;display:block;}
   .doc-more a:hover{color:var(--sky-deep);}
 
-  /* ── 푸터 ─ [수정 8] 흰색 배경 ─────────── */
+  /* ── 푸터(흰색) ──────────────────────── */
   footer.site-footer{background:var(--paper);border-top:1px solid var(--hairline);margin-top:4rem;}
   .footer-inner{padding:2.75rem 0 3.5rem;}
   .f-top{display:flex;flex-direction:column;gap:2.25rem;}
@@ -330,27 +272,8 @@
   <div class="wrapper">
     <div class="layout">
 
-      <!-- ═══ 본문 ═══ -->
-      <div class="article">
-        <header>
-          <p class="eyebrow label-caps">
-            <a href="#">리프팅</a><span class="sub">올타이트 · 소프라노 티타늄</span>
-          </p>
-
-          <!-- [수정 1] 제목에서 (티타늄) 삭제 -->
-          <h1 class="title">결혼식이 코앞인데 다운타임 없는 리프팅 추천해주세요</h1>
-
-          <div class="byline">
-            <img src="https://newhealhouse.vercel.app/images/doctors/jung-hanmi-1.jpg" alt="정한미 원장" width="44" height="44">
-            <div>
-              <div class="name">정한미</div>
-              <div class="meta">피부과 전문의 · 강남점</div>
-            </div>
-            <time class="date" datetime="2026-07-12">2026. 07. 12</time>
-          </div>
-        </header>
-
-        <!-- 목차 -->
+      <!-- ═══ 왼쪽: 목차 열 (데스크톱) ═══ -->
+      <aside class="toc-col">
         <nav class="toc" aria-label="목차">
           <p class="toc-h">목차</p>
           <ol>
@@ -360,8 +283,29 @@
             <li><a href="#q4">티타늄은 결혼식을 앞두고 언제 받으면 좋나요?</a></li>
           </ol>
         </nav>
+      </aside>
 
-        <!-- [수정 5] 핵심 요약 박스 -->
+      <!-- ═══ 가운데: 본문 ═══ -->
+      <div class="article">
+        <header>
+          <p class="eyebrow label-caps">
+            <a href="#">리프팅</a><span class="sub">올타이트 · 소프라노 티타늄</span>
+          </p>
+          <h1 class="title">결혼식이 코앞인데 다운타임 없는 리프팅 추천해주세요</h1>
+        </header>
+
+        <!-- 목차(모바일: 제목 바로 아래) -->
+        <nav class="toc toc-inline" aria-label="목차">
+          <p class="toc-h">목차</p>
+          <ol>
+            <li><a href="#q1">중요한 일정 전에 받을 수 있는 리프팅이 있나요?</a></li>
+            <li><a href="#q2">티타늄 리프팅은 어떤 원리인가요?</a></li>
+            <li><a href="#q3">왜 결혼식 전에 티타늄 리프팅이 좋나요?</a></li>
+            <li><a href="#q4">티타늄은 결혼식을 앞두고 언제 받으면 좋나요?</a></li>
+          </ol>
+        </nav>
+
+        <!-- 핵심 요약 박스(배경 이미지) -->
         <div class="hh-summary">
           <span class="tag">핵심</span>
           <p>결혼식 전에는 다운타임이 거의 없는 티타늄 리프팅이 적합합니다. 붓기·멍·자국이 적어 바로 일상 복귀가 가능하고, 얼굴선 탄력과 피부톤·광채를 함께 챙길 수 있습니다. 붉은기를 고려해 행사 3~7일 전 여유를 두는 것을 권합니다.</p>
@@ -382,11 +326,9 @@
             </div>
           </section>
 
-          <!-- [수정 6] Q1 끝 → Q2 앞 이미지 -->
+          <!-- Q1 끝 → Q2 앞 이미지 -->
           <figure class="hh-figure">
-            <div class="frame">
-              <img src="titanium-device.jpg" alt="티타늄 리프팅 장비">
-            </div>
+            <div class="frame"><img src="titanium-device.jpg" alt="티타늄 리프팅 장비"></div>
           </figure>
 
           <section id="q2">
@@ -405,9 +347,7 @@
             <div class="answer">
               <p><strong>다운타임이 거의 없고, 탄력과 함께 피부톤·광채까지 살아나기 때문입니다.</strong></p>
               <table>
-                <thead>
-                  <tr><th>특징</th><th>티타늄 리프팅</th></tr>
-                </thead>
+                <thead><tr><th>특징</th><th>티타늄 리프팅</th></tr></thead>
                 <tbody>
                   <tr><td><strong>다운타임</strong></td><td>붓기·멍·자국이 적어 바로 일상 복귀</td></tr>
                   <tr><td><strong>통증</strong></td><td>부담이 적은 편</td></tr>
@@ -419,11 +359,9 @@
             </div>
           </section>
 
-          <!-- [수정 6] Q3 끝 → Q4 앞 이미지 -->
+          <!-- Q3 끝 → Q4 앞 이미지 -->
           <figure class="hh-figure">
-            <div class="frame">
-              <img src="wedding.jpg" alt="결혼식 준비">
-            </div>
+            <div class="frame"><img src="wedding.jpg" alt="결혼식 준비"></div>
           </figure>
 
           <section id="q4">
@@ -438,7 +376,7 @@
 
         </div>
 
-        <!-- 글쓴이(모바일) -->
+        <!-- 글쓴이(모바일 하단) -->
         <section class="author-m" aria-label="글쓴이 소개">
           <img src="https://newhealhouse.vercel.app/images/doctors/jung-hanmi-1.jpg" alt="정한미 원장">
           <div>
@@ -448,10 +386,13 @@
           </div>
         </section>
 
-        <!-- [수정 7] 함께 읽으면 좋을 글 : 박스·날짜 제거, 카테고리(파랑)+제목 -->
+        <!-- 함께 읽으면 좋을 글 : 제목 옆 선 + 2열 -->
         <section class="related" aria-label="함께 읽으면 좋을 글">
           <p class="r-head">Related</p>
-          <h2>함께 읽으면 좋을 글</h2>
+          <div class="r-titlebar">
+            <h2>함께 읽으면 좋을 글</h2>
+            <span class="r-rule" aria-hidden="true"></span>
+          </div>
           <ul>
             <li><a href="#"><div class="r-cat">리프팅</div><div class="r-title">얼굴살이 처져 고민인데 안 아픈 리프팅 없나요?</div></a></li>
             <li><a href="#"><div class="r-cat">주름·윤곽</div><div class="r-title">목 잔주름, 해결방법 없나요?</div></a></li>
@@ -467,13 +408,11 @@
         </section>
       </div>
 
-      <!-- ═══ 사이드바 ═══ -->
+      <!-- ═══ 오른쪽: 프로필 열 (데스크톱) ═══ -->
       <aside class="sidebar">
         <div class="sticky">
           <div class="doc-card">
-            <a href="#">
-              <div class="photo"><img src="https://newhealhouse.vercel.app/images/doctors/jung-hanmi-1.jpg" alt="정한미 원장"></div>
-            </a>
+            <a href="#"><div class="photo"><img src="https://newhealhouse.vercel.app/images/doctors/jung-hanmi-1.jpg" alt="정한미 원장"></div></a>
             <p class="name">정한미<span class="role">피부과 전문의</span></p>
             <p class="desc">한 번 시술 후 잊혀지는 의사가 아닌, 피부에 대한 모든 것을 믿고 맡길 수 있는 피부 주치의를 약속합니다.</p>
           </div>
@@ -493,7 +432,7 @@
   </div>
 </main>
 
-<!-- ── 푸터 ─ [수정 8] 흰색 ────────────── -->
+<!-- ── 푸터(흰색) ─────────────────────── -->
 <footer class="site-footer">
   <div class="wrapper footer-inner">
     <div class="f-top">
@@ -530,35 +469,26 @@
   </div>
 </footer>
 
-<!-- ── [수정 9] 스크롤 반응 형광펜 ──────── -->
+<!-- ── 스크롤 반응 형광펜 ──────────────── -->
 <script>
   (function(){
     var marks = Array.prototype.slice.call(document.querySelectorAll('.hl'));
     if(!marks.length) return;
-
     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
       marks.forEach(function(m){ m.classList.add('on'); });
       return;
     }
-
     var ticking = false;
     function update(){
-      // 화면 아래에서 위로 올라온 문장이 뷰포트 78% 지점을 지나면 형광펜 ON,
-      // 스크롤을 올려 그 아래로 내려가면 OFF (되돌아감)
-      var line = window.innerHeight * 0.78;
+      var line = window.innerHeight * 0.78;   // 문장이 뷰포트 78% 위로 올라오면 ON, 내려가면 OFF
       for(var i=0;i<marks.length;i++){
         var r = marks[i].getBoundingClientRect();
-        if(r.top < line && r.bottom > 0){
-          marks[i].classList.add('on');
-        }else{
-          marks[i].classList.remove('on');
-        }
+        if(r.top < line && r.bottom > 0){ marks[i].classList.add('on'); }
+        else{ marks[i].classList.remove('on'); }
       }
       ticking = false;
     }
-    function onScroll(){
-      if(!ticking){ ticking = true; requestAnimationFrame(update); }
-    }
+    function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
     window.addEventListener('scroll', onScroll, {passive:true});
     window.addEventListener('resize', onScroll, {passive:true});
     update();
